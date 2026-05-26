@@ -12,4 +12,4 @@ Since this project uses server-side scripts and a database, you must follow thes
 6. Click "Admin" next to the MySQL module.
 7. Once the phpMyAdmin page opens up, click "Import" and select the art_movements.sql file.
 8. After the import, go back to the control panel and click "Admin" next to the Apache module.
-9. Navigate to Art Movement Capstone/Art Movements. This should open up the main page of the Art Movements project.
+9. Navigate to the "Art Movements" directory. This should open up the main page of the Art Movements project.
