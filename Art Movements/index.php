@@ -3,7 +3,7 @@ $title = 'Art Movements';
 include('Ext/main.php');
 ?>
 		<figure>
-			<img src="Cubism/weeping_woman.jpg" width="329" height="400" alt="Weeping Woman">
+			<img id="featured" src="Cubism/weeping_woman.jpg" width="329" height="400" alt="Weeping Woman">
 			<figcaption><i>Weeping Woman</i> by Pablo Picasso</figcaption>
 		</figure>
 
