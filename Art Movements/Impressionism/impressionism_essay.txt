@@ -10,7 +10,7 @@ Impressionism revealed the beauty of nature and interactivity with free brush st
 
 <b>Sources:</b>
 
-[1] http://sothebys.com/en/art-movements/impressionism 
-[2] https://www.masterclass.com/articles/impressionism-guide 
-[3] https://mymodernmet.com/what-is-impressionism-definition/ 
-[4] https://www.history.com/articles/history-of-cubism 
+[1] <a href="http://sothebys.com/en/art-movements/impressionism">http://sothebys.com/en/art-movements/impressionism</a>
+[2] <a href="https://www.masterclass.com/articles/impressionism-guide">https://www.masterclass.com/articles/impressionism-guide</a>
+[3] <a href="https://mymodernmet.com/what-is-impressionism-definition/">https://mymodernmet.com/what-is-impressionism-definition/</a>
+[4] <a href="https://www.history.com/articles/history-of-cubism">https://www.history.com/articles/history-of-cubism</a>
