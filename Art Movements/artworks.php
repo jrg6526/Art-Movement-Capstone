@@ -16,11 +16,14 @@ include('Ext/main.php');
             "SELECT
                 art.image,
                 art.title,
-                CONCAT(tst.first_name, ' ', tst.last_name) AS artist_name
+                CONCAT(tst.first_name, ' ', tst.last_name) AS artist_name,
+                move.move_name
             FROM
                 artwork AS art,
-                artist AS tst
+                artist AS tst,
+                movement AS move
             WHERE art.artist_id = tst.artist_id
+                AND art.movement_id = move.movement_id
             ORDER BY art.title";
         $img = mysqli_query($art_db, $art_images);
 
@@ -28,7 +31,9 @@ include('Ext/main.php');
             while ($row = mysqli_fetch_array($img)) {
                 echo "
             <figure>
-                <img src='{$row['image']}' width='75%'>
+                <a href='mvt.php?move_name={$row['move_name']}'>
+                    <img src='{$row['image']}' width='75%'>
+                </a>
                 <figcaption><i>{$row['title']}</i> by {$row['artist_name']}</figcaption>
             </figure>";
             }

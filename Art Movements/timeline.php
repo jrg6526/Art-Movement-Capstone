@@ -15,7 +15,10 @@ include('Ext/main.php');
         if ($tf) {
             while ($row = mysqli_fetch_array($tf, MYSQLI_ASSOC)) {
                 echo "
-        <div>{$row['move_name']}: {$row['start_year']}&ndash;{$row['end_year']}</div>";
+        <div>
+            <a href='mvt.php?move_name={$row['move_name']}'>{$row['move_name']}</a>:
+                {$row['start_year']}&ndash;{$row['end_year']}
+        </div>";
             }
 
             mysqli_free_result($tf);
