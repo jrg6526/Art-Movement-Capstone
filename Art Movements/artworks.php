@@ -31,7 +31,7 @@ include('Ext/main.php');
             while ($row = mysqli_fetch_array($img)) {
                 echo "
             <figure>
-                <a href='mvt.php?move_name={$row['move_name']}'>
+                <a href='mvt.php?move_name={$row['move_name']}#{$row['title']}'>
                     <img src='{$row['image']}' width='75%'>
                 </a>
                 <figcaption><i>{$row['title']}</i> by {$row['artist_name']}</figcaption>

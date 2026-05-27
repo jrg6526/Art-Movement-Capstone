@@ -13,6 +13,7 @@ include('Ext/main.php');
             "SELECT
                 CONCAT(tst.first_name, ' ', tst.last_name)
                     AS artist_name,
+                art.title,
                 move.move_name
             FROM
                 artist AS tst,
@@ -20,13 +21,14 @@ include('Ext/main.php');
                 movement AS move
             WHERE tst.artist_id = art.artist_id
                 AND art.movement_id = move.movement_id
+            GROUP BY tst.last_name
             ORDER BY last_name";
         $an = mysqli_query($art_db, $artist_names);
 
         if ($an) {
             while ($row = mysqli_fetch_array($an)) {
                 echo "
-            <a href='mvt.php?move_name={$row['move_name']}'>
+            <a href='mvt.php?move_name={$row['move_name']}#{$row['title']}'>
                 <li>{$row['artist_name']}</li>
             </a>\n";
             }

@@ -64,7 +64,7 @@ echo
                 while ($row = mysqli_fetch_array($img, MYSQLI_ASSOC)) {
                     echo "
             <figure>
-                <img src='{$row['image']}' width='75%'>
+                <img id='{$row['title']}' src='{$row['image']}' width='75%'>
                 <figcaption><i>{$row['title']}</i> by {$row['artist_name']}</figcaption>
             </figure>";
                 }
